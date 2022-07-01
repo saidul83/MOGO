@@ -79,7 +79,25 @@
                   </nav>
                 </div>
                 <!--------End Menu Bar------------------>
-                <div class="header-slider">
+                <div class="header-slider owl-carousel owl-theme">
+                    <div class="slider-item ">
+                        <span class="font-spa">Creative Template</span>
+                        <h1><span>Welcome</span> to MoGo</h1>
+                        <hr class="hori-line">
+                        <a href="#" class="btn btn-primary mogo-btn">Learn More</a>
+                    </div>   
+                    <div class="slider-item ">
+                        <span class="font-spa">Creative Template</span>
+                        <h1><span>Welcome</span> to MoGo</h1>
+                        <hr class="hori-line">
+                        <a href="#" class="btn btn-primary mogo-btn">Learn More</a>
+                    </div>   
+                    <div class="slider-item">
+                        <span class="font-spa">Creative Template</span>
+                        <h1><span>Welcome</span> to MoGo</h1>
+                        <hr class="hori-line">
+                        <a href="#" class="btn btn-primary mogo-btn">Learn More</a>
+                    </div>   
                     <div class="slider-item">
                         <span class="font-spa">Creative Template</span>
                         <h1><span>Welcome</span> to MoGo</h1>
@@ -87,12 +105,12 @@
                         <a href="#" class="btn btn-primary mogo-btn">Learn More</a>
                     </div>   
                 </div>
+                <!-------End Header Slider Area------------->
             </div>
         </header>
       
   
   
-        <!--<span onclick="openNav()">&#9776; </i></span>-->
   
 
                 
@@ -116,6 +134,25 @@
       function closeNav() {
         document.getElementById("mySidenav").style.width = "0";
       }
+      </script>
+
+      <script>
+          $('.header-slider').owlCarousel({
+          loop:true,
+          margin:10,
+          nav:false,
+          responsive:{
+              0:{
+                  items:1
+              },
+              600:{
+                  items:1
+              },
+              1000:{
+                  items:1
+              }
+          }
+        })
       </script>
   </body>
 </html>

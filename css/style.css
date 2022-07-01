@@ -149,6 +149,7 @@ ul{
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding-top: 100px;
 }
 .header-slider .font-spa{
   font-size: 72px;
@@ -181,39 +182,36 @@ ul{
   background: linear-gradient(to top, #fce38a, #ffca7d, #ffb078, #fe987a, #f38181);
   border: 3px solid #fce38a;
 }
-
-
-
-@media screen and (max-height: 767px){
-  .header-slider .font-spa {
-    font-size: 28px;
-  }
-  .header-slider h1 {
-    font-size: 32px;
-    margin-bottom: 25px;
-  }
-  .header{
-    min-height: 600px;
-  }
-  .header-slider{
-    min-height: 450px;
-  }
-  .header-slider hr{
-    width: 100px;
-  }
-  .sidenav a{
-    font-size: 18px;
-  }
-  .header{
-    background-size: cover;
-    width: 100%;
-  }
-  .Search-area:hover .main-search{
-    left: 50px;
-    bottom: 0px;
-  }
-  .main-search {
-    width: 230px;
-  }
-
+.owl-theme .owl-nav.disabled + .owl-dots{
+  margin-top: 80px;
 }
+.owl-theme .owl-dots .owl-dot span {
+    width: 200px;
+    height: 10px;
+    background: #f8ebc5;
+    border-radius: 5px;
+}
+.owl-theme .owl-dots .owl-dot.active span{
+  background: #f8ebc5;
+  position: relative;
+}
+.owl-theme .owl-dots .owl-dot:hover span {
+  background-image: #f8ebc5;
+}
+.owl-theme .owl-dots .owl-dot.active span::before{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: red;
+  border-radius: 5px;
+}
+
+/*==================================================================
+                End Header Slider Area
+====================================================================*/
+/*==================================================================================================
+                            End Header Area
+====================================================================================================*/
