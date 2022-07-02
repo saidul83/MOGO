@@ -1,6 +1,7 @@
 /* /* Mobile Layout: 320px  */
 
-@media screen and (max-height: 767px){
+@media only screen and (max-width: 767px) {
+
     .header-slider .font-spa {
       font-size: 28px;
     }
@@ -31,7 +32,4 @@
     .main-search {
       width: 230px;
     }
-  
-  }
-  
-
+}
