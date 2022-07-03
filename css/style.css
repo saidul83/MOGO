@@ -180,7 +180,7 @@ ul{
 }
 .mogo-btn:hover{
   background: linear-gradient(to top, #fce38a, #ffca7d, #ffb078, #fe987a, #f38181);
-  border: 3px solid #fce38a;
+  border: 3px solid transparent;
 }
 .owl-theme .owl-nav.disabled + .owl-dots{
   margin-top: 80px;
@@ -209,9 +209,105 @@ ul{
   border-radius: 5px;
 }
 
-/*==================================================================
-                End Header Slider Area
-====================================================================*/
+/*                End Header Slider Area             */
 /*==================================================================================================
                             End Header Area
+====================================================================================================*/
+.about{
+  margin-bottom: 100px;
+}
+.about-title{
+  padding-top: 100px;
+  text-align: center;
+}
+.about-title .font-spa{
+  font-size: 25px;
+  font-weight: 500;
+}
+.about-title h2{
+  padding-bottom: 30px;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.about-title .hori-line{
+  height: 3px;
+  width: 60px;
+  background: #f38181;
+  margin: 0 auto 50px;
+}
+.about-title p{
+  font-size: 18px;
+  width: 90%;
+  padding-bottom: 100px;
+}
+/*                End About Title Area             */
+.about-img img{
+  width: 100%;
+}
+.single-about{
+  position: relative;
+  cursor: pointer;
+}
+.single-about:hover{
+  -webkit-box-shadow: 10px 10px 0px 1px rgba(149,225,211,1);
+  -moz-box-shadow: 10px 10px 0px 1px rgba(149,225,211,1);
+  box-shadow: 10px 10px 0px 1px rgba(149,225,211,1);
+}
+.single-about::before{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background: linear-gradient(to top, #fce38a, #ffca7d, #ffb078, #fe987a, #f38181);
+  opacity: 0.9;
+  visibility: hidden;
+  transition: .5s;
+}
+.single-about:hover::before{
+  visibility: visible;
+  transition: .5s;
+  height: 100%;
+}
+.single-about:hover .about-info{
+  visibility: visible;
+  opacity: 1;
+  transition: .5s;
+}
+/*.single-about::after{
+  position: absolute;
+  content: "";
+  top: 10px;
+  right: -10px;
+  width: 100%;
+  height: 100%;
+  background: #95e1d3;
+  opacity: 1;
+  z-index: -2;
+}*/
+.about-info{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: .5s;
+}
+.about-info i{
+  font-size: 20px;
+  color: #fff;
+}
+.about-info h4{
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+}
+/*                End About IMG Area             */
+/*==================================================================================================
+                            End About Area
 ====================================================================================================*/

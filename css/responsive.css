@@ -6,7 +6,7 @@
       font-size: 28px;
     }
     .header-slider h1 {
-      font-size: 32px;
+      font-size: 40px;
       margin-bottom: 25px;
     }
     .header{
@@ -31,5 +31,42 @@
     }
     .main-search {
       width: 230px;
+    }
+
+    .owl-theme .owl-dots .owl-dot span {
+      width: 68px;
+    }
+    .owl-theme .owl-dots .owl-dot.active span::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 50%;
+      height: 100%;
+      background-image: linear-gradient(to top, #1e4d94, #0065a2, #007aa6, #008ea1, #199f99);
+      border-radius: 5px;
+  }
+    .mogo-btn {
+      padding: 8px 5px;
+      font-size: 13px;
+    }
+    .mogo-btn:hover{
+      background: #8b4f0a;
+      border: 3px solid transparent;
+    }
+    /*==================================================================================================
+                            End Header Responsive Area
+====================================================================================================*/
+    .about-title h2 {
+      font-size: 23px;
+    }
+    .about-title p {
+      font-size: 14px;
+      width: 100%;
+      text-align: justify;
+      margin-bottom: 30px;
+    }
+    .single-about {
+      margin-bottom: 50px;
     }
 }
