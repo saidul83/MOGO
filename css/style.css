@@ -334,37 +334,79 @@ ul{
 .single-counter{
   text-align: center;
   border-right: 2px solid #fff;
-  padding: 40px 30px;
+  padding: 40px 50px;
 }
 .single-counter:nth-child(1){
   border-left: 2px solid #fff;
 }
 .single-counter span{
-  font-size: 80px;
+  font-size: 60px;
   font-weight: 700;
   color: #fff;
 }
 .single-counter p{
-  font-size: 16px;
+  font-size: 15px;
   color: #fff;
   text-transform: uppercase;
+}
+.count-1{
+  text-align: center;
 }
 /*==================================================================================================
                             End Counter Area
 ====================================================================================================*/
 .service-area{
   margin-bottom: 50px;
+  position: relative;
+}
+.service-area::before{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 25%;
+  height: 50%;
+  border-top: 5px solid rgb(0, 255, 170);
+  border-left: 5px solid rgb(120, 34, 160);
+  transition: 0.5s;
+}
+.service-area::after{
+  position: absolute;
+  content: "";
+  bottom: 0;
+  right: 0;
+  width: 25%;
+  height: 25%;
+  border-bottom: 5px solid rgb(150, 117, 11);
+  border-right: 5px solid rgb(0, 195, 255);
+  transition: 0.5s;
+}
+.service-area:hover::after{
+  width: 100%;
+  height: 100%;
+  border-bottom: 5px solid rgb(77, 170, 92);
+  border-right: 5px solid rgb(59, 35, 116);
+  transition: 0.5s;
+}
+.service-area:hover::before{
+  width: 100%;
+  height: 100%;
+  border-top: 5px solid rgb(163, 48, 82);
+  border-left: 5px solid rgb(6, 102, 102);
+  transition: 0.5s;
 }
 .service-img i{
   color: #95e1d3;
   font-size: 50px;
-  padding-right: 40px;
+  padding: 40px 20px 10px;
+  
 }
 .service-text h4{
   font-size: 30px;
   color: #333333;
   font-weight: 300;
   text-transform: uppercase;
+  padding-top: 50px;
 }
 
 .service-text p{
