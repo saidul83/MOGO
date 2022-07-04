@@ -17,6 +17,23 @@ ul{
   margin: 0;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #95e1d3; 
+  border-radius: 10px;
+}
+
 /*===============================================
           Common Style CSS
 ==================================================*/
@@ -311,3 +328,24 @@ ul{
 /*==================================================================================================
                             End About Area
 ====================================================================================================*/
+.counter-area{
+  background: #95e1d3;
+}
+.single-counter{
+  text-align: center;
+  border-right: 2px solid #fff;
+  padding: 40px 30px;
+}
+.single-counter:nth-child(1){
+  border-left: 2px solid #fff;
+}
+.single-counter span{
+  font-size: 80px;
+  font-weight: 700;
+  color: #fff;
+}
+.single-counter p{
+  font-size: 16px;
+  color: #fff;
+  text-transform: uppercase;
+}

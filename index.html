@@ -162,38 +162,76 @@
               </div>
           </div>
         </section>
-        <!--===================================================
-                  End About Area
-        =====================================================-->
-  
-  
-
+        <!--==================================================================================
+                                           End About Area
+        ========================================================================================-->
+      <div class="counter-area">
+            <div class="container">
+              <div class="counter-single-area d-flex justify-content-between">
+                  <div class="single-counter">
+                      <span class="counter">42</span>
+                      <p>Web Design Projects</p>
+                  </div>
+                  <div class="single-counter">
+                      <span class="counter">123</span>
+                      <p>happy client</p>
+                  </div>
+                  <div class="single-counter">
+                      <span class="counter">15</span>
+                      <p>award winner</p>
+                  </div>
+                  <div class="single-counter">
+                      <span class="counter">99</span>
+                      <p>cup of coffee</p>
+                  </div>
+                  <div class="single-counter">
+                      <span class="counter">24</span>
+                      <p>members</p>
+                  </div>
+              </div>
+            </div>
+        </div>
+        <!--====================================================================================
+                                          End Counter Area
+        ========================================================================================-->
+        <section class="service">
+            <div class="container">
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="about-title">
+                          <span class="font-spa">What we do</span>
+                          <h2>Story about us</h2>
+                          <hr class="hori-line">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                      </div>
+                  </div>
+                  <!--------End Service title Area--------------------->
+              </div>
+            </div>
+        </section>
                 
 
 
 
-
-
-
-
-    
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" ></script>
+   
+    <script src="js/jquery.min.js" ></script>
     <script src="js/bootstrap.bundle.min.js" ></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script>
       function openNav() {
-        document.getElementById("mySidenav").style.width = "330px";
+        document.getElementById("mySidenav").style.width = "250px";
       }
       
       function closeNav() {
         document.getElementById("mySidenav").style.width = "0";
       }
       </script>
-
       <script>
-          $('.header-slider').owlCarousel({
-          loop:true,
+        $('.header-slider').owlCarousel({
+          loop: true,
           margin:10,
           nav:false,
           responsive:{
@@ -207,7 +245,16 @@
                   items:1
               }
           }
-        })
+      })
       </script>
+      <script>
+        jQuery(document).ready(function($) {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1000
+            });
+        });
+    </script>
+
   </body>
 </html>
