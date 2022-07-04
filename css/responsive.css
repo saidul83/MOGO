@@ -3,10 +3,10 @@
 @media only screen and (max-width: 767px) {
 
     .header-slider .font-spa {
-      font-size: 28px;
+      font-size: 25px;
     }
     .header-slider h1 {
-      font-size: 40px;
+      font-size: 45px;
       margin-bottom: 25px;
     }
     .header{
@@ -68,5 +68,29 @@
     }
     .single-about {
       margin-bottom: 50px;
+    }
+    /*==================================================================================================
+                            End About Responsive Area
+    ====================================================================================================*/
+    .single-counter {
+      padding: 10px 10px;
+    }
+    .single-counter span {
+      font-size: 30px;
+    }
+    .single-counter p {
+      font-size: 10px;
+    }
+    /*==================================================================================================
+                            End Counter Responsive Area
+    ====================================================================================================*/
+    .service-img i {
+      font-size: 40px;
+    }
+    .service-text h4 {
+      font-size: 20px;
+    }
+    .service-text p {
+      font-size: 13px;
     }
 }

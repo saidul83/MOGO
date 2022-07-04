@@ -349,3 +349,30 @@ ul{
   color: #fff;
   text-transform: uppercase;
 }
+/*==================================================================================================
+                            End Counter Area
+====================================================================================================*/
+.service-area{
+  margin-bottom: 50px;
+}
+.service-img i{
+  color: #95e1d3;
+  font-size: 50px;
+  padding-right: 40px;
+}
+.service-text h4{
+  font-size: 30px;
+  color: #333333;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.service-text p{
+  font-size: 15px;
+}
+.service .service-hr {
+  height: 1px;
+  width: 100%;
+  background: #e5e5e5;
+  margin-bottom: 50px;
+}
