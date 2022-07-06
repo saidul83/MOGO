@@ -334,7 +334,7 @@ ul{
 .single-counter{
   text-align: center;
   border-right: 2px solid #fff;
-  padding: 40px 50px;
+  padding: 40px 30px;
 }
 .single-counter:nth-child(1){
   border-left: 2px solid #fff;
@@ -349,12 +349,17 @@ ul{
   color: #fff;
   text-transform: uppercase;
 }
+
 .count-1{
   text-align: center;
+  padding-right: 60px;
 }
 /*==================================================================================================
                             End Counter Area
 ====================================================================================================*/
+.service{
+  margin-bottom: 100px;
+}
 .service-area{
   margin-bottom: 50px;
   position: relative;
@@ -417,4 +422,277 @@ ul{
   width: 100%;
   background: #e5e5e5;
   margin-bottom: 50px;
+}
+/*==================================================================================================
+                            End Service Area
+====================================================================================================*/
+.unique-design{
+  background: url('../images/unique-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 900px;
+  position: relative;
+}
+.unique-design::before{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  opacity: .85;
+}
+.unique-img{
+  text-align: center;
+}
+.unique-img img{
+  width: 60%;
+}
+/*==================================================================================================
+                            End Unique Design Area
+====================================================================================================*/
+.we-do-img img{
+  width: 100%;
+  height: 370px;
+}
+.btn-link:hover{
+  color: #95e1d3;
+  text-decoration: none;
+}
+.btn-link h4{
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+
+}
+.btn-link i{
+  padding-right: 20px;
+}
+
+
+.card-body p{
+  font-size: 15px;
+  font-style: italic;
+}
+.card-body{
+  height: 150px;
+  overflow-y: scroll;
+}
+/*==================================================================================================
+                            End We Do Area
+====================================================================================================*/
+.messege-slider-area{
+  margin-top: 150px;
+  margin-bottom: 100px;
+  margin-left: 60px;
+}
+.messege-icon{
+  margin: 20px 0 0 30px;
+}
+.messege-icon i{
+  color: #95e1d3;
+  font-size: 64px;
+  border: 5px solid #95e1d3;
+  padding: 30px;
+}
+
+.messege-text p{
+  font-size: 25px;
+  width: 80%;
+  font-style: italic;
+  margin-left: 100px;
+
+}
+.messege-hr .hori-line{
+  height: 3px;
+  width: 60px;
+  background: #f38181;
+  margin: 20px 30px 0 100px;
+ 
+}
+.messege-span span{
+  font-size: 24px;
+  font-weight: 700;
+  font-family: 'Kaushan Script', cursive;
+}
+.messege-slide{
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.fa-angle-left{
+  position: absolute;
+  top: 30%;
+  left: -50px;
+  font-size: 40px;
+  color: #cccccc;
+}
+.fa-angle-right{
+  position: absolute;
+  top: 20%;
+  right: 50px;
+  font-size: 40px;
+  color: #cccccc;
+}
+/*==================================================================================================
+                            End Messege Slider  Area
+====================================================================================================*/
+.single-team{
+  position: relative;
+  margin-bottom: 50px;
+}
+.single-team::before{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background: linear-gradient(to top, #fce38a, #ffca7d, #ffb078, #fe987a, #f38181);
+  opacity: 0.9;
+  visibility: hidden;
+  transition: .5s;
+}
+.single-team::after{
+  position: absolute;
+  content: "";
+  top: 10px;
+  left: 10px;
+  width: 100%;
+  height: 0;
+  background: #95e1d3;
+  opacity: 0.9;
+  visibility: hidden;
+  transition: .5s;
+  z-index: -1;
+}
+.single-team:hover::before, .single-team:hover::after{
+  visibility: visible;
+  transition: .5s;
+  height: 100%;
+}
+.single-team:hover .team-icon{
+  visibility: visible;
+  opacity: 1;
+  transition: .5s;
+}
+.team-img img{
+  width: 100%;
+}
+.team-icon{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: .5s;
+  opacity: 0;
+  visibility: hidden;
+}
+.team-icon ul li{
+  list-style-type: none;
+  
+}
+.team-icon ul li a i{
+  background: #fce38a;
+  padding: 20px;
+  color: #f38181;
+  border-right: 1px solid #f9bd87;
+  font-size: 30px;
+  
+  
+}
+.team-icon ul li a i:hover{
+  color: #fff;
+  background: #f38181;
+}
+.user-text{
+  text-align: center;
+}
+.user-text span{
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 5px;
+}
+.user-text p{
+  font-size: 15px;
+  font-style: italic;
+}
+/*==================================================================================================
+                            End Team  Area
+====================================================================================================*/
+.icon{
+  margin-top: 100px;
+}
+.icon-item {
+  margin-right: 90px;
+}
+.icon-item a img{
+  width: 120px;
+}
+/*==================================================================================================
+                            End Icon Area
+====================================================================================================*/
+.work-img{
+  position: relative;
+}
+.work-img::before{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 125%;
+  height: 0;
+  background: linear-gradient(to top, #fce38a, #ffca7d, #ffb078, #fe987a, #f38181);
+  opacity: 0.9;
+  visibility: hidden;
+  transition: .5s;
+}
+.work-img:hover::before{
+  visibility: visible;
+  transition: .5s;
+  height: 100%;
+}
+.work-img:hover .our-work-text {
+  visibility: visible;
+  transition: .5s;
+  opacity: 1;
+}
+.our-work-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  visibility: hidden;
+  transition: .5s;
+  opacity: 0;
+}
+.our-work-text h5{
+  font-size: 14px;
+}
+.our-work-text .fa-image{
+  font-size: 20px;
+}
+.our-work-text p{
+  font-size: 14px;
+}
+.work-img img{
+  width: 300px;
+}
+.work{
+  clear: both;
+  margin-left: 15px;
+}
+.hei{
+  height: 243px;
+}
+/*==================================================================================================
+                            End Our Work Area
+====================================================================================================*/
+.messege-img{
+  margin: 20px 0 0 20px;
 }
